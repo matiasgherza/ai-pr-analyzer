@@ -46409,9 +46409,8 @@ module.exports = /*#__PURE__*/JSON.parse('[[[0,44],"disallowed_STD3_valid"],[[45
 var __webpack_exports__ = {};
 const core = __nccwpck_require__(3874);
 const github = __nccwpck_require__(6461);
-const openaiModule = __nccwpck_require__(9535);
-const Configuration = openaiModule.default.Configuration;
-const OpenAIApi = openaiModule.default.OpenAIApi;
+const { default: openaiModule } = __nccwpck_require__(9535);
+const { Configuration, OpenAIApi } = openaiModule;
 
 async function run() {
   try {
