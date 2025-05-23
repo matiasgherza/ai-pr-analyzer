@@ -1,0 +1,14 @@
+name: Gerza AI PR Analyzer
+description: Analiza Pull Requests con IA y resume los cambios por archivo en inglés o español.
+
+inputs:
+  openai-api-key:
+    description: 'API key de OpenAI'
+    required: true
+  language:
+    description: 'Idioma del análisis: english | spanish'
+    required: true
+
+runs:
+  using: 'node16'
+  main: 'index.js'
