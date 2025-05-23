@@ -1,6 +1,8 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
-const { Configuration, OpenAIApi } = require('openai');
+const openaiModule = require('openai');
+const Configuration = openaiModule.Configuration;
+const OpenAIApi = openaiModule.OpenAIApi;
 
 async function run() {
   try {
